@@ -1,5 +1,5 @@
 const CACHE_PREFIX = `white-tower-${new URL(self.registration.scope).pathname}-`;
-const CACHE_NAME = `${CACHE_PREFIX}build-fba02793a68d676b`;
+const CACHE_NAME = `${CACHE_PREFIX}build-b247c32bd5e993d6`;
 const gameUrl = path => new URL(path.replace(/^\//, ''), self.registration.scope).href;
 
 self.addEventListener('install', event => {
@@ -43,15 +43,12 @@ self.addEventListener('fetch', event => {
   const request = event.request;
   if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
   event.respondWith((async () => {
-    // Refresh HTML online; hashed assets stay cache-first and offline play still works.
+    // Keep HTML and manifests from one release until the waiting worker activates.
     if (request.mode === 'navigate') {
-      try {
-        const response = await fetch(request, { cache: 'no-store' });
-        if (response.ok) return response;
-      } catch { /* Use the fully installed shell when offline. */ }
       const cache = await caches.open(CACHE_NAME);
       const shell = await cache.match(gameUrl('/'));
       if (shell) return shell;
+      return fetch(request, { cache: 'no-store' });
     }
     // Immutable public assets have no Origin-specific content. Module/CSS fetches
     // send Origin while install requests do not; Vary: Origin must not break offline.
