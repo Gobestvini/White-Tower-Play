@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "id": "level-015",
+  "title": "Level 15",
+  "cells": [
+    {
+      "u": 0,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": -1,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": -2,
+      "kind": "normal"
+    },
+    {
+      "u": 3,
+      "v": -3,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 3,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 0,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 0,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 0,
+      "v": 3,
+      "kind": "normal"
+    },
+    {
+      "u": -1,
+      "v": -1,
+      "kind": "normal"
+    },
+    {
+      "u": -2,
+      "v": -2,
+      "kind": "normal"
+    },
+    {
+      "u": -2,
+      "v": -1,
+      "kind": "normal"
+    },
+    {
+      "u": -2,
+      "v": 0,
+      "kind": "normal"
+    }
+  ],
+  "stacks": [
+    {
+      "u": 0,
+      "v": 0,
+      "height": 1
+    },
+    {
+      "u": 1,
+      "v": -1,
+      "height": 1,
+      "launchDirection": "SW"
+    },
+    {
+      "u": 2,
+      "v": -2,
+      "height": 1
+    },
+    {
+      "u": 3,
+      "v": -3,
+      "height": 1,
+      "launchDirection": "W"
+    },
+    {
+      "u": 1,
+      "v": 0,
+      "height": 1
+    },
+    {
+      "u": 2,
+      "v": 0,
+      "height": 1
+    },
+    {
+      "u": 3,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "NW"
+    },
+    {
+      "u": 0,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "E"
+    },
+    {
+      "u": 0,
+      "v": 2,
+      "height": 1
+    },
+    {
+      "u": 0,
+      "v": 3,
+      "height": 1,
+      "launchDirection": "NE"
+    },
+    {
+      "u": -1,
+      "v": -1,
+      "height": 1
+    },
+    {
+      "u": -2,
+      "v": -2,
+      "height": 1,
+      "launchDirection": "S"
+    },
+    {
+      "u": -2,
+      "v": -1,
+      "height": 1
+    },
+    {
+      "u": -2,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "NE"
+    }
+  ],
+  "totalTiles": 14,
+  "cameraPreset": "reference",
+  "tutorialKey": null,
+  "parMoves": 5,
+  "knownSolution": [
+    {
+      "u": 3,
+      "v": -3
+    },
+    {
+      "u": 3,
+      "v": 0
+    },
+    {
+      "u": 0,
+      "v": 3
+    },
+    {
+      "u": -2,
+      "v": 0
+    },
+    {
+      "u": -2,
+      "v": -2
+    }
+  ]
+}
