@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>White Tower</title>
+    <link rel="icon" href="data:," />
+  <script id="platform-bridge" async src="https://telegram.org/js/telegram-web-app.js?64"></script>  <script type="module" crossorigin src="/White-Tower-Play/telegram/assets/index-DZF087hb.js"></script>
+  <link rel="stylesheet" crossorigin href="/White-Tower-Play/telegram/assets/index-CAxR8Yq9.css">
+</head>
+  <body data-startup="loading">
+    <style>
+      html,body{margin:0;background:#56c4fa}#startup-preloader{position:fixed;inset:0;z-index:101;display:grid;place-items:center;background:#56c4fa}#startup-preloader[hidden]{display:none}.startup-spinner{width:40px;height:40px;border:5px solid #ffffff66;border-top-color:#fff;border-radius:50%;animation:startup-spin .8s linear infinite}@keyframes startup-spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.startup-spinner{animation:none}}#load-error:not([hidden]){position:fixed;inset:0;z-index:102;display:grid;place-content:center;background:#56c4fa;color:#123e75;font:18px sans-serif}
+    </style>
+    <div id="startup-preloader" role="status" aria-label="Loading"><div class="startup-spinner" aria-hidden="true"></div></div>
+    <main>
+      <h1 class="visually-hidden">White Tower</h1>
+      <canvas aria-label="White Tower game board"></canvas>
+      <div id="hud" class="hud" aria-label="Game controls"></div>
+      <p id="status" class="visually-hidden" role="status">Ready</p>
+      <section id="load-error" class="load-error" role="alert" hidden>
+        <p>Could not load White Tower content. Check the connection and retry.</p>
+        <button type="button" onclick="location.reload()">Retry</button>
+      </section>
+    </main>
+  </body>
+</html>

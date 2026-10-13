@@ -1,5 +1,5 @@
 const CACHE_PREFIX = `white-tower-${new URL(self.registration.scope).pathname}-`;
-const CACHE_NAME = `${CACHE_PREFIX}build-f0c3834d4e297470`;
+const CACHE_NAME = `${CACHE_PREFIX}build-3cd2dab14a65f0ee`;
 const gameUrl = path => new URL(path.replace(/^\//, ''), self.registration.scope).href;
 const updateStates = new Map();
 
@@ -8,8 +8,8 @@ self.addEventListener('message', event => {
   updateStates.set(event.source.id, event.data.safe);
   event.waitUntil((async () => {
     const windows = (await self.clients.matchAll({ type: 'window', includeUncontrolled: true }))
-      .filter(client => client.url.startsWith(self.registration.scope));
-    if (windows.length && windows.every(client => updateStates.get(client.id) === true)) await self.skipWaiting();
+      .filter(client => client.url.startsWith(self.registration.scope) && !client.url.startsWith(gameUrl('/telegram/')));
+    if (windows.every(client => updateStates.get(client.id) === true)) await self.skipWaiting();
   })());
 });
 
@@ -55,6 +55,8 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const request = event.request;
   if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
+  // Other targets share the hosting origin, but own their navigation and assets.
+  if (new URL(request.url).pathname === new URL(gameUrl('/telegram')).pathname || request.url.startsWith(gameUrl('/telegram/'))) return;
   event.respondWith((async () => {
     // Keep HTML and manifests from one release until the waiting worker activates.
     if (request.mode === 'navigate') {

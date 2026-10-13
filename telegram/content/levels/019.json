@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "level-019",
+  "title": "Level 19",
+  "cells": [
+    {
+      "u": 0,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 0,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 0,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 2,
+      "kind": "normal"
+    }
+  ],
+  "stacks": [
+    {
+      "u": 2,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "W"
+    },
+    {
+      "u": 1,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "S"
+    },
+    {
+      "u": 2,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "W"
+    },
+    {
+      "u": 0,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "NE"
+    },
+    {
+      "u": 1,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "NE"
+    },
+    {
+      "u": 2,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "NW"
+    }
+  ],
+  "totalTiles": 6,
+  "cameraPreset": "reference",
+  "tutorialKey": null,
+  "parMoves": 3,
+  "knownSolution": [
+    {
+      "u": 2,
+      "v": 0
+    },
+    {
+      "u": 2,
+      "v": 1
+    },
+    {
+      "u": 2,
+      "v": 2
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "level-090",
+  "title": "Level 90",
+  "cells": [
+    {
+      "u": 0,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 0,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 0,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 0,
+      "v": 3,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 3,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 3,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 3,
+      "v": 1,
+      "kind": "normal"
+    }
+  ],
+  "stacks": [
+    {
+      "u": 0,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "W"
+    },
+    {
+      "u": 0,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "E"
+    },
+    {
+      "u": 1,
+      "v": 3,
+      "height": 1,
+      "launchDirection": "NE"
+    },
+    {
+      "u": 1,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "NW"
+    },
+    {
+      "u": 0,
+      "v": 3,
+      "height": 1,
+      "launchDirection": "NE"
+    },
+    {
+      "u": 3,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "NW"
+    },
+    {
+      "u": 2,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "N"
+    },
+    {
+      "u": 2,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "E"
+    },
+    {
+      "u": 2,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "E"
+    },
+    {
+      "u": 0,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "S"
+    },
+    {
+      "u": 3,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "W"
+    },
+    {
+      "u": 1,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "SE"
+    }
+  ],
+  "totalTiles": 12,
+  "cameraPreset": "reference",
+  "tutorialKey": null,
+  "parMoves": 5,
+  "knownSolution": [
+    {
+      "u": 0,
+      "v": 3
+    },
+    {
+      "u": 2,
+      "v": 1
+    },
+    {
+      "u": 3,
+      "v": 1
+    },
+    {
+      "u": 1,
+      "v": 3
+    },
+    {
+      "u": 3,
+      "v": 0
+    }
+  ]
+}
