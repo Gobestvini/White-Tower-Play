@@ -1,5 +1,5 @@
 const CACHE_PREFIX = `white-tower-${new URL(self.registration.scope).pathname}-`;
-const CACHE_NAME = `${CACHE_PREFIX}build-02d070763459b794`;
+const CACHE_NAME = `${CACHE_PREFIX}build-d7c3de8b408a8546`;
 const gameUrl = path => new URL(path.replace(/^\//, ''), self.registration.scope).href;
 
 self.addEventListener('install', event => {
@@ -18,16 +18,12 @@ self.addEventListener('install', event => {
       if (!artResponse.ok) throw new Error('UI asset manifest could not be fetched.');
       const art = await artResponse.json();
       if (!Array.isArray(art) || art.some(file => typeof file !== 'string' || !file.startsWith('/assets/'))) throw new Error('UI asset manifest is invalid.');
-      const runtimeResponse = await fetch(gameUrl('/runtime-assets.json'), { cache: 'no-store' });
-      if (!runtimeResponse.ok) throw new Error('Runtime asset manifest could not be fetched.');
-      const runtime = await runtimeResponse.json();
-      if (!Array.isArray(runtime) || runtime.some(file => typeof file !== 'string' || !file.startsWith('/assets/') || file.includes('..'))) throw new Error('Runtime asset manifest is invalid.');
-      await cache.addAll([...new Set([...['/','/index.html','/manifest.webmanifest','/white-tower.svg','/content/catalog.json','/art-assets.json','/runtime-assets.json',...art,...runtime,...catalog.levels.map(level=>level.path)].map(gameUrl),...assets])].map(url => new Request(url, { cache: 'reload' })));
+      await cache.addAll([...['/','/index.html','/manifest.webmanifest','/white-tower.svg','/content/catalog.json','/art-assets.json',...art,...catalog.levels.map(level=>level.path)].map(gameUrl),...assets].map(url => new Request(url, { cache: 'reload' })));
     } catch (error) {
       await caches.delete(CACHE_NAME);
       throw error;
     }
-    // Updated releases wait for existing clients to close; never replace an active attempt.
+    await self.skipWaiting();
   })());
 });
 
@@ -43,12 +39,15 @@ self.addEventListener('fetch', event => {
   const request = event.request;
   if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
   event.respondWith((async () => {
-    // Keep HTML and manifests from one release until the waiting worker activates.
+    // Refresh HTML online; hashed assets stay cache-first and offline play still works.
     if (request.mode === 'navigate') {
+      try {
+        const response = await fetch(request, { cache: 'no-store' });
+        if (response.ok) return response;
+      } catch { /* Use the fully installed shell when offline. */ }
       const cache = await caches.open(CACHE_NAME);
       const shell = await cache.match(gameUrl('/'));
       if (shell) return shell;
-      return fetch(request, { cache: 'no-store' });
     }
     // Immutable public assets have no Origin-specific content. Module/CSS fetches
     // send Origin while install requests do not; Vary: Origin must not break offline.
