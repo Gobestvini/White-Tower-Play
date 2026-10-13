@@ -1,5 +1,5 @@
 const CACHE_PREFIX = `white-tower-${new URL(self.registration.scope).pathname}-`;
-const CACHE_NAME = `${CACHE_PREFIX}build-958585987317f2ac`;
+const CACHE_NAME = `${CACHE_PREFIX}build-18edf4802c471694`;
 const gameUrl = path => new URL(path.replace(/^\//, ''), self.registration.scope).href;
 
 self.addEventListener('install', event => {

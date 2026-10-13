@@ -9,166 +9,125 @@
       "kind": "normal"
     },
     {
+      "u": 0,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 0,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 0,
+      "v": 3,
+      "kind": "normal"
+    },
+    {
       "u": 1,
       "v": 0,
       "kind": "normal"
     },
     {
-      "u": 2,
-      "v": 0,
-      "kind": "normal"
-    },
-    {
-      "u": 3,
-      "v": 0,
-      "kind": "normal"
-    },
-    {
-      "u": 3,
+      "u": 1,
       "v": 1,
-      "kind": "normal"
+      "kind": "redirect",
+      "direction": "N"
     },
     {
-      "u": 3,
+      "u": 1,
       "v": 2,
       "kind": "normal"
     },
     {
-      "u": 3,
+      "u": 1,
       "v": 3,
       "kind": "normal"
     },
     {
-      "u": 4,
+      "u": 2,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
       "v": 3,
-      "kind": "normal"
-    },
-    {
-      "u": 5,
-      "v": 3,
-      "kind": "normal"
-    },
-    {
-      "u": 5,
-      "v": 4,
-      "kind": "normal"
-    },
-    {
-      "u": 5,
-      "v": 5,
-      "kind": "normal"
-    },
-    {
-      "u": 6,
-      "v": 5,
-      "kind": "normal"
-    },
-    {
-      "u": 7,
-      "v": 5,
       "kind": "normal"
     }
   ],
   "stacks": [
     {
       "u": 0,
-      "v": 0,
-      "height": 1
-    },
-    {
-      "u": 1,
-      "v": 0,
+      "v": 1,
       "height": 1,
-      "launchDirection": "SE"
+      "launchDirection": "S"
     },
     {
       "u": 2,
-      "v": 0,
-      "height": 1
-    },
-    {
-      "u": 3,
-      "v": 0,
-      "height": 1,
-      "launchDirection": "NW"
-    },
-    {
-      "u": 3,
       "v": 1,
-      "height": 1
+      "height": 1,
+      "launchDirection": "SW"
     },
     {
-      "u": 3,
-      "v": 2,
-      "height": 1
-    },
-    {
-      "u": 3,
+      "u": 0,
       "v": 3,
       "height": 1,
       "launchDirection": "NE"
     },
     {
-      "u": 4,
+      "u": 1,
       "v": 3,
       "height": 1,
       "launchDirection": "N"
     },
     {
-      "u": 5,
+      "u": 2,
       "v": 3,
       "height": 1,
       "launchDirection": "NW"
     },
     {
-      "u": 5,
-      "v": 4,
+      "u": 1,
+      "v": 2,
       "height": 1,
-      "launchDirection": "NE"
+      "launchDirection": "SW"
     },
     {
-      "u": 5,
-      "v": 5,
+      "u": 1,
+      "v": 1,
       "height": 1,
-      "launchDirection": "NE"
-    },
-    {
-      "u": 6,
-      "v": 5,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": 7,
-      "v": 5,
-      "height": 1,
-      "launchDirection": "NW"
+      "launchDirection": "N"
     }
   ],
-  "totalTiles": 13,
+  "totalTiles": 7,
   "cameraPreset": "reference",
   "tutorialKey": null,
   "parMoves": 5,
   "knownSolution": [
     {
-      "u": 7,
-      "v": 5
+      "u": 0,
+      "v": 1
     },
     {
-      "u": 5,
-      "v": 5
+      "u": 2,
+      "v": 1
     },
     {
-      "u": 5,
+      "u": 1,
+      "v": 1
+    },
+    {
+      "u": 2,
       "v": 3
     },
     {
-      "u": 3,
+      "u": 0,
       "v": 3
-    },
-    {
-      "u": 3,
-      "v": 0
     }
   ]
 }

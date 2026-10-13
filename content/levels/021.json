@@ -5,81 +5,102 @@
   "cells": [
     {
       "u": 0,
-      "v": 0,
-      "kind": "normal"
-    },
-    {
-      "u": -1,
-      "v": 0,
-      "kind": "normal"
-    },
-    {
-      "u": -1,
       "v": 1,
       "kind": "normal"
     },
     {
-      "u": -2,
-      "v": 1,
-      "kind": "normal"
-    },
-    {
-      "u": -2,
+      "u": 0,
       "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 1,
       "kind": "normal"
     }
   ],
   "stacks": [
     {
+      "u": 2,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "NW"
+    },
+    {
+      "u": 1,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "W"
+    },
+    {
+      "u": 2,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "W"
+    },
+    {
       "u": 0,
-      "v": 0,
-      "height": 1
-    },
-    {
-      "u": -1,
-      "v": 0,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": -1,
-      "v": 1,
-      "height": 1,
-      "launchDirection": "NE"
-    },
-    {
-      "u": -2,
-      "v": 1,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": -2,
       "v": 2,
       "height": 1,
-      "launchDirection": "NE"
+      "launchDirection": "SE"
+    },
+    {
+      "u": 0,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "SE"
+    },
+    {
+      "u": 1,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "S"
     }
   ],
-  "totalTiles": 5,
+  "totalTiles": 6,
   "cameraPreset": "reference",
   "tutorialKey": null,
-  "parMoves": 4,
+  "parMoves": 5,
   "knownSolution": [
     {
-      "u": -2,
+      "u": 2,
+      "v": 0
+    },
+    {
+      "u": 0,
       "v": 2
     },
     {
-      "u": -2,
+      "u": 0,
       "v": 1
     },
     {
-      "u": -1,
-      "v": 1
-    },
-    {
-      "u": -1,
+      "u": 1,
       "v": 0
+    },
+    {
+      "u": 2,
+      "v": 1
     }
   ]
 }

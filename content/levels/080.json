@@ -9,13 +9,8 @@
       "kind": "normal"
     },
     {
-      "u": -1,
-      "v": -1,
-      "kind": "normal"
-    },
-    {
-      "u": -2,
-      "v": -2,
+      "u": 0,
+      "v": 1,
       "kind": "normal"
     },
     {
@@ -24,26 +19,45 @@
       "kind": "normal"
     },
     {
-      "u": -1,
-      "v": -2,
+      "u": 1,
+      "v": 1,
       "kind": "normal"
     },
     {
-      "u": 0,
-      "v": -2,
-      "kind": "redirect",
-      "direction": "NW"
+      "u": 1,
+      "v": 2,
+      "kind": "normal"
     },
     {
       "u": 2,
       "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 3,
       "kind": "normal"
     },
     {
       "u": 3,
       "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 3,
+      "v": 3,
       "kind": "redirect",
-      "direction": "N"
+      "direction": "S"
+    },
+    {
+      "u": 3,
+      "v": 4,
+      "kind": "normal"
     },
     {
       "u": 4,
@@ -51,125 +65,150 @@
       "kind": "normal"
     },
     {
-      "u": 0,
-      "v": -3,
+      "u": 4,
+      "v": 4,
       "kind": "normal"
     },
     {
-      "u": 0,
-      "v": -4,
+      "u": 4,
+      "v": 5,
       "kind": "normal"
     },
     {
       "u": 5,
-      "v": 3,
+      "v": 4,
       "kind": "normal"
     },
     {
-      "u": -1,
-      "v": -3,
+      "u": 5,
+      "v": 5,
+      "kind": "normal"
+    },
+    {
+      "u": 5,
+      "v": 6,
+      "kind": "redirect",
+      "direction": "E"
+    },
+    {
+      "u": 6,
+      "v": 5,
+      "kind": "normal"
+    },
+    {
+      "u": 6,
+      "v": 6,
       "kind": "normal"
     }
   ],
   "stacks": [
     {
-      "u": 0,
-      "v": 0,
-      "height": 1
+      "u": 5,
+      "v": 6,
+      "height": 1,
+      "launchDirection": "E"
     },
     {
-      "u": -1,
-      "v": -1,
+      "u": 4,
+      "v": 3,
       "height": 1,
-      "launchDirection": "N"
-    },
-    {
-      "u": -2,
-      "v": -2,
-      "height": 1,
-      "launchDirection": "S"
+      "launchDirection": "W"
     },
     {
       "u": 1,
       "v": 0,
       "height": 1,
-      "launchDirection": "NW"
+      "launchDirection": "W"
     },
     {
-      "u": -1,
-      "v": -2,
-      "height": 1
-    },
-    {
-      "u": 0,
-      "v": -2,
-      "height": 1,
-      "launchDirection": "NW"
-    },
-    {
-      "u": 2,
-      "v": 1,
-      "height": 1
-    },
-    {
-      "u": 4,
-      "v": 3,
-      "height": 1,
-      "launchDirection": "N"
-    },
-    {
-      "u": 0,
-      "v": -3,
+      "u": 1,
+      "v": 2,
       "height": 1,
       "launchDirection": "NE"
     },
     {
-      "u": 0,
-      "v": -4,
+      "u": 6,
+      "v": 5,
       "height": 1,
-      "launchDirection": "SW"
+      "launchDirection": "W"
     },
     {
-      "u": 5,
+      "u": 3,
       "v": 3,
+      "height": 1,
+      "launchDirection": "S"
+    },
+    {
+      "u": 6,
+      "v": 6,
       "height": 1,
       "launchDirection": "NW"
     },
     {
-      "u": -1,
-      "v": -3,
+      "u": 0,
+      "v": 1,
       "height": 1,
-      "launchDirection": "E"
+      "launchDirection": "S"
+    },
+    {
+      "u": 2,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "NW"
+    },
+    {
+      "u": 4,
+      "v": 5,
+      "height": 1,
+      "launchDirection": "NE"
+    },
+    {
+      "u": 2,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "S"
+    },
+    {
+      "u": 3,
+      "v": 4,
+      "height": 1,
+      "launchDirection": "S"
+    },
+    {
+      "u": 5,
+      "v": 5,
+      "height": 1,
+      "launchDirection": "N"
     }
   ],
-  "totalTiles": 12,
+  "totalTiles": 13,
   "cameraPreset": "reference",
   "tutorialKey": null,
   "parMoves": 6,
   "knownSolution": [
     {
-      "u": 5,
-      "v": 3
+      "u": 2,
+      "v": 2
     },
     {
-      "u": -1,
-      "v": -3
-    },
-    {
-      "u": 4,
-      "v": 3
-    },
-    {
-      "u": 0,
-      "v": -4
+      "u": 6,
+      "v": 6
     },
     {
       "u": 1,
       "v": 0
     },
     {
-      "u": -2,
-      "v": -2
+      "u": 2,
+      "v": 1
+    },
+    {
+      "u": 4,
+      "v": 3
+    },
+    {
+      "u": 0,
+      "v": 1
     }
   ]
 }

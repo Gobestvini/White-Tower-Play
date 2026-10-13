@@ -9,33 +9,13 @@
       "kind": "normal"
     },
     {
-      "u": 1,
-      "v": 0,
-      "kind": "normal"
-    },
-    {
-      "u": 2,
-      "v": 0,
-      "kind": "normal"
-    },
-    {
-      "u": 2,
+      "u": 0,
       "v": 1,
       "kind": "normal"
     },
     {
-      "u": 2,
+      "u": 0,
       "v": 2,
-      "kind": "normal"
-    },
-    {
-      "u": 2,
-      "v": 3,
-      "kind": "normal"
-    },
-    {
-      "u": 1,
-      "v": 3,
       "kind": "normal"
     },
     {
@@ -44,186 +24,210 @@
       "kind": "normal"
     },
     {
-      "u": -1,
-      "v": 3,
-      "kind": "redirect",
-      "direction": "SE"
-    },
-    {
-      "u": -1,
-      "v": 4,
+      "u": 1,
+      "v": 0,
       "kind": "normal"
     },
     {
-      "u": -1,
-      "v": 5,
-      "kind": "normal"
-    },
-    {
-      "u": -2,
-      "v": 5,
-      "kind": "normal"
-    },
-    {
-      "u": -2,
-      "v": 4,
-      "kind": "normal"
-    },
-    {
-      "u": -2,
-      "v": 3,
-      "kind": "redirect",
-      "direction": "SW"
-    },
-    {
-      "u": -2,
-      "v": 2,
-      "kind": "redirect",
-      "direction": "SW"
-    },
-    {
-      "u": -3,
-      "v": 2,
-      "kind": "normal"
-    },
-    {
-      "u": -3,
+      "u": 1,
       "v": 1,
       "kind": "normal"
     },
     {
-      "u": -3,
+      "u": 1,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 1,
+      "v": 3,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
       "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 2,
+      "v": 3,
+      "kind": "normal"
+    },
+    {
+      "u": 3,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 3,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 3,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 3,
+      "v": 3,
+      "kind": "normal"
+    },
+    {
+      "u": 4,
+      "v": 0,
+      "kind": "normal"
+    },
+    {
+      "u": 4,
+      "v": 1,
+      "kind": "normal"
+    },
+    {
+      "u": 4,
+      "v": 2,
+      "kind": "normal"
+    },
+    {
+      "u": 4,
+      "v": 3,
       "kind": "normal"
     }
   ],
   "stacks": [
     {
-      "u": 0,
+      "u": 2,
+      "v": 3,
+      "height": 1,
+      "launchDirection": "SE"
+    },
+    {
+      "u": 3,
       "v": 0,
-      "height": 1
+      "height": 1,
+      "launchDirection": "E"
+    },
+    {
+      "u": 3,
+      "v": 3,
+      "height": 1,
+      "launchDirection": "E"
+    },
+    {
+      "u": 4,
+      "v": 3,
+      "height": 1,
+      "launchDirection": "NW"
+    },
+    {
+      "u": 0,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "W"
+    },
+    {
+      "u": 3,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "W"
+    },
+    {
+      "u": 4,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "N"
     },
     {
       "u": 1,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "S"
+    },
+    {
+      "u": 1,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "NE"
+    },
+    {
+      "u": 4,
       "v": 0,
       "height": 1,
       "launchDirection": "S"
     },
     {
-      "u": 2,
-      "v": 0,
+      "u": 4,
+      "v": 1,
       "height": 1,
       "launchDirection": "NW"
     },
     {
-      "u": 2,
-      "v": 1,
-      "height": 1
-    },
-    {
-      "u": 2,
+      "u": 0,
       "v": 2,
       "height": 1,
       "launchDirection": "W"
     },
     {
-      "u": 2,
+      "u": 1,
       "v": 3,
       "height": 1,
       "launchDirection": "NE"
-    },
-    {
-      "u": 1,
-      "v": 3,
-      "height": 1
     },
     {
       "u": 0,
       "v": 3,
       "height": 1,
-      "launchDirection": "NW"
-    },
-    {
-      "u": -1,
-      "v": 3,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": -1,
-      "v": 4,
-      "height": 1,
-      "launchDirection": "N"
-    },
-    {
-      "u": -1,
-      "v": 5,
-      "height": 1,
       "launchDirection": "NE"
     },
     {
-      "u": -2,
-      "v": 5,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": -2,
-      "v": 4,
-      "height": 1
-    },
-    {
-      "u": -2,
-      "v": 2,
-      "height": 1,
-      "launchDirection": "SW"
-    },
-    {
-      "u": -3,
-      "v": 2,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": -3,
-      "v": 1,
-      "height": 1,
-      "launchDirection": "SW"
-    },
-    {
-      "u": -3,
+      "u": 0,
       "v": 0,
       "height": 1,
-      "launchDirection": "SW"
+      "launchDirection": "SE"
+    },
+    {
+      "u": 3,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "E"
     }
   ],
-  "totalTiles": 17,
+  "totalTiles": 16,
   "cameraPreset": "reference",
   "tutorialKey": null,
-  "parMoves": 6,
+  "parMoves": 7,
   "knownSolution": [
     {
-      "u": -3,
-      "v": 0
-    },
-    {
-      "u": -3,
-      "v": 2
-    },
-    {
-      "u": -2,
-      "v": 5
-    },
-    {
-      "u": -1,
-      "v": 5
-    },
-    {
-      "u": 2,
+      "u": 4,
       "v": 3
     },
     {
-      "u": 2,
+      "u": 1,
+      "v": 2
+    },
+    {
+      "u": 3,
+      "v": 2
+    },
+    {
+      "u": 4,
+      "v": 2
+    },
+    {
+      "u": 4,
+      "v": 1
+    },
+    {
+      "u": 0,
+      "v": 3
+    },
+    {
+      "u": 0,
       "v": 0
     }
   ]
