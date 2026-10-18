@@ -1,6 +1,14 @@
 const CACHE_PREFIX = `white-tower-${new URL(self.registration.scope).pathname}-`;
-const CACHE_NAME = `${CACHE_PREFIX}build-8309d02bd556c8f3`;
+const CACHE_NAME = `${CACHE_PREFIX}build-559ec15ff975265d`;
 const gameUrl = path => new URL(path.replace(/^\//, ''), self.registration.scope).href;
+// Registration scope can cover several projects; only these entry URLs are ours.
+const isGameDocument = value => {
+  const url = new URL(value);
+  return url.origin === new URL(self.registration.scope).origin &&
+    [new URL(gameUrl('/')).pathname, new URL(gameUrl('/index.html')).pathname].includes(url.pathname);
+};
+const isGameResource = url => ['assets/', 'content/'].some(path => url.href.startsWith(gameUrl(path))) ||
+  ['manifest.webmanifest', 'white-tower.svg', 'art-assets.json', 'runtime-assets.json', 'build-info.json', 'sw.js'].some(path => url.pathname === new URL(gameUrl(path)).pathname);
 const updateStates = new Map();
 
 self.addEventListener('message', event => {
@@ -8,7 +16,7 @@ self.addEventListener('message', event => {
   updateStates.set(event.source.id, event.data.safe);
   event.waitUntil((async () => {
     const windows = (await self.clients.matchAll({ type: 'window', includeUncontrolled: true }))
-      .filter(client => client.url.startsWith(self.registration.scope) && !client.url.startsWith(gameUrl('/telegram/')));
+      .filter(client => isGameDocument(client.url));
     if (windows.every(client => updateStates.get(client.id) === true)) await self.skipWaiting();
   })());
 });
@@ -55,8 +63,8 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const request = event.request;
   if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
-  // Other targets share the hosting origin, but own their navigation and assets.
-  if (new URL(request.url).pathname === new URL(gameUrl('/telegram')).pathname || request.url.startsWith(gameUrl('/telegram/'))) return;
+  // Never replace another project's navigation with our cached HTML shell.
+  if (request.mode === 'navigate' ? !isGameDocument(request.url) : !isGameDocument(request.url) && !isGameResource(new URL(request.url))) return;
   event.respondWith((async () => {
     // Keep HTML and manifests from one release until the waiting worker activates.
     if (request.mode === 'navigate') {
