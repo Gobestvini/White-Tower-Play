@@ -1,5 +1,5 @@
 const CACHE_PREFIX = `white-tower-${new URL(self.registration.scope).pathname}-`;
-const CACHE_NAME = `${CACHE_PREFIX}build-630630f425db98aa`;
+const CACHE_NAME = `${CACHE_PREFIX}build-d91232fd9dc7535b`;
 const gameUrl = path => new URL(path.replace(/^\//, ''), self.registration.scope).href;
 const updateStates = new Map();
 
