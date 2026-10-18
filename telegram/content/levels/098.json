@@ -26,8 +26,7 @@
     {
       "u": 4,
       "v": 0,
-      "kind": "redirect",
-      "direction": "NW"
+      "kind": "normal"
     },
     {
       "u": 5,
@@ -37,8 +36,7 @@
     {
       "u": 6,
       "v": 0,
-      "kind": "redirect",
-      "direction": "SW"
+      "kind": "normal"
     },
     {
       "u": 6,
@@ -153,62 +151,14 @@
   ],
   "stacks": [
     {
-      "u": 3,
-      "v": 6,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": 1,
-      "v": 6,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": 0,
-      "v": 5,
+      "u": 5,
+      "v": 0,
       "height": 1,
       "launchDirection": "S"
     },
     {
-      "u": 3,
-      "v": 2,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": 0,
-      "v": 4,
-      "height": 1,
-      "launchDirection": "NE"
-    },
-    {
-      "u": 4,
-      "v": 2,
-      "height": 1,
-      "launchDirection": "NW"
-    },
-    {
-      "u": 0,
-      "v": 6,
-      "height": 1,
-      "launchDirection": "NE"
-    },
-    {
-      "u": 4,
-      "v": 4,
-      "height": 1,
-      "launchDirection": "NE"
-    },
-    {
-      "u": 4,
-      "v": 3,
-      "height": 1,
-      "launchDirection": "N"
-    },
-    {
       "u": 6,
-      "v": 3,
+      "v": 1,
       "height": 1,
       "launchDirection": "SW"
     },
@@ -219,44 +169,79 @@
       "launchDirection": "NW"
     },
     {
-      "u": 1,
+      "u": 0,
+      "v": 6,
+      "height": 1,
+      "launchDirection": "NE"
+    },
+    {
+      "u": 0,
       "v": 2,
       "height": 1,
-      "launchDirection": "NW"
+      "launchDirection": "SE"
+    },
+    {
+      "u": 4,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "SW"
+    },
+    {
+      "u": 4,
+      "v": 6,
+      "height": 1
+    },
+    {
+      "u": 0,
+      "v": 5,
+      "height": 1
+    },
+    {
+      "u": 5,
+      "v": 6,
+      "height": 1
+    },
+    {
+      "u": 3,
+      "v": 6,
+      "height": 1
+    },
+    {
+      "u": 6,
+      "v": 3,
+      "height": 1,
+      "launchDirection": "NE"
+    },
+    {
+      "u": 1,
+      "v": 2,
+      "height": 1
     }
   ],
   "totalTiles": 12,
   "cameraPreset": "reference",
   "tutorialKey": null,
-  "parMoves": 7,
+  "parMoves": 5,
   "knownSolution": [
     {
-      "u": 1,
+      "u": 5,
+      "v": 0
+    },
+    {
+      "u": 6,
+      "v": 1
+    },
+    {
+      "u": 6,
       "v": 6
     },
     {
-      "u": 4,
-      "v": 4
+      "u": 0,
+      "v": 6
     },
     {
-      "u": 4,
+      "u": 0,
       "v": 2
-    },
-    {
-      "u": 0,
-      "v": 4
-    },
-    {
-      "u": 6,
-      "v": 3
-    },
-    {
-      "u": 6,
-      "v": 6
-    },
-    {
-      "u": 0,
-      "v": 6
     }
   ]
 }

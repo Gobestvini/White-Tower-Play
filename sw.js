@@ -1,5 +1,5 @@
 const CACHE_PREFIX = `white-tower-${new URL(self.registration.scope).pathname}-`;
-const CACHE_NAME = `${CACHE_PREFIX}build-8e043151a5b14105`;
+const CACHE_NAME = `${CACHE_PREFIX}build-2cb5ee1a448c0673`;
 const gameUrl = path => new URL(path.replace(/^\//, ''), self.registration.scope).href;
 const updateStates = new Map();
 
@@ -33,7 +33,7 @@ self.addEventListener('install', event => {
       if (!runtimeResponse.ok) throw new Error('Runtime asset manifest could not be fetched.');
       const runtime = await runtimeResponse.json();
       if (!Array.isArray(runtime) || runtime.some(file => typeof file !== 'string' || !file.startsWith('/assets/') || file.includes('..'))) throw new Error('Runtime asset manifest is invalid.');
-      await cache.addAll([...new Set([...['/','/index.html','/manifest.webmanifest','/white-tower.svg','/content/catalog.json','/art-assets.json','/runtime-assets.json',...art,...runtime,...catalog.levels.map(level=>level.path)].map(gameUrl),...assets])].map(url => new Request(url, { cache: 'reload' })));
+      await cache.addAll([...new Set([...['/','/index.html','/manifest.webmanifest','/white-tower.svg','/content/catalog.json','/content/levels-pack.json','/art-assets.json','/runtime-assets.json',...art,...runtime,...catalog.levels.map(level=>level.path)].map(gameUrl),...assets])].map(url => new Request(url, { cache: 'reload' })));
     } catch (error) {
       await caches.delete(CACHE_NAME);
       throw error;

@@ -61,8 +61,7 @@
     {
       "u": 3,
       "v": 0,
-      "kind": "redirect",
-      "direction": "SW"
+      "kind": "normal"
     },
     {
       "u": 3,
@@ -102,130 +101,136 @@
   ],
   "stacks": [
     {
-      "u": 4,
-      "v": 0,
-      "height": 1,
-      "launchDirection": "SW"
-    },
-    {
-      "u": 4,
-      "v": 3,
-      "height": 1,
-      "launchDirection": "NW"
-    },
-    {
-      "u": 1,
-      "v": 3,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": 3,
-      "v": 1,
-      "height": 1,
-      "launchDirection": "S"
-    },
-    {
       "u": 2,
-      "v": 3,
-      "height": 1,
-      "launchDirection": "N"
-    },
-    {
-      "u": 0,
       "v": 0,
       "height": 1,
       "launchDirection": "SE"
     },
     {
-      "u": 0,
-      "v": 1,
+      "u": 4,
+      "v": 0,
       "height": 1,
-      "launchDirection": "SW"
+      "launchDirection": "W"
     },
     {
-      "u": 4,
-      "v": 2,
+      "u": 3,
+      "v": 1,
       "height": 1,
       "launchDirection": "SW"
     },
     {
       "u": 3,
       "v": 3,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": 4,
-      "v": 1,
       "height": 1,
       "launchDirection": "NW"
-    },
-    {
-      "u": 3,
-      "v": 0,
-      "height": 1,
-      "launchDirection": "SW"
-    },
-    {
-      "u": 1,
-      "v": 1,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": 3,
-      "v": 2,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": 1,
-      "v": 2,
-      "height": 1,
-      "launchDirection": "E"
-    },
-    {
-      "u": 0,
-      "v": 2,
-      "height": 1,
-      "launchDirection": "SE"
     },
     {
       "u": 0,
       "v": 3,
       "height": 1,
       "launchDirection": "NE"
+    },
+    {
+      "u": 0,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "S"
+    },
+    {
+      "u": 1,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "NE"
+    },
+    {
+      "u": 1,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "S"
+    },
+    {
+      "u": 4,
+      "v": 3,
+      "height": 1
+    },
+    {
+      "u": 2,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "SE"
+    },
+    {
+      "u": 3,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "S"
+    },
+    {
+      "u": 3,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "E"
+    },
+    {
+      "u": 0,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "SE"
+    },
+    {
+      "u": 0,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "SE"
+    },
+    {
+      "u": 1,
+      "v": 3,
+      "height": 1
+    },
+    {
+      "u": 2,
+      "v": 3,
+      "height": 1,
+      "launchDirection": "E"
     }
   ],
   "totalTiles": 16,
   "cameraPreset": "reference",
   "tutorialKey": null,
-  "parMoves": 6,
+  "parMoves": 8,
   "knownSolution": [
     {
-      "u": 0,
+      "u": 2,
       "v": 0
-    },
-    {
-      "u": 0,
-      "v": 1
-    },
-    {
-      "u": 1,
-      "v": 1
     },
     {
       "u": 4,
       "v": 0
     },
     {
-      "u": 1,
-      "v": 2
+      "u": 3,
+      "v": 1
     },
     {
-      "u": 4,
+      "u": 3,
       "v": 3
+    },
+    {
+      "u": 0,
+      "v": 3
+    },
+    {
+      "u": 0,
+      "v": 0
+    },
+    {
+      "u": 1,
+      "v": 1
+    },
+    {
+      "u": 1,
+      "v": 0
     }
   ]
 }

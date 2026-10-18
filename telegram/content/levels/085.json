@@ -76,50 +76,8 @@
   ],
   "stacks": [
     {
-      "u": 0,
-      "v": 1,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
       "u": 2,
       "v": 2,
-      "height": 1,
-      "launchDirection": "S"
-    },
-    {
-      "u": 1,
-      "v": 0,
-      "height": 1,
-      "launchDirection": "SE"
-    },
-    {
-      "u": 2,
-      "v": 3,
-      "height": 1,
-      "launchDirection": "NE"
-    },
-    {
-      "u": 1,
-      "v": 3,
-      "height": 1,
-      "launchDirection": "NW"
-    },
-    {
-      "u": 2,
-      "v": 1,
-      "height": 1,
-      "launchDirection": "S"
-    },
-    {
-      "u": 3,
-      "v": 0,
-      "height": 1,
-      "launchDirection": "E"
-    },
-    {
-      "u": 3,
-      "v": 1,
       "height": 1,
       "launchDirection": "N"
     },
@@ -127,25 +85,65 @@
       "u": 1,
       "v": 1,
       "height": 1,
-      "launchDirection": "NE"
+      "launchDirection": "NW"
     },
     {
-      "u": 1,
-      "v": 2,
+      "u": 0,
+      "v": 1,
       "height": 1,
       "launchDirection": "SW"
-    },
-    {
-      "u": 2,
-      "v": 0,
-      "height": 1,
-      "launchDirection": "SE"
     },
     {
       "u": 0,
       "v": 3,
       "height": 1,
-      "launchDirection": "NE"
+      "launchDirection": "SE"
+    },
+    {
+      "u": 2,
+      "v": 3,
+      "height": 1,
+      "launchDirection": "E"
+    },
+    {
+      "u": 3,
+      "v": 2,
+      "height": 1,
+      "launchDirection": "N"
+    },
+    {
+      "u": 1,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "SE"
+    },
+    {
+      "u": 3,
+      "v": 0,
+      "height": 1
+    },
+    {
+      "u": 2,
+      "v": 0,
+      "height": 1,
+      "launchDirection": "S"
+    },
+    {
+      "u": 0,
+      "v": 2,
+      "height": 1
+    },
+    {
+      "u": 1,
+      "v": 3,
+      "height": 1,
+      "launchDirection": "E"
+    },
+    {
+      "u": 2,
+      "v": 1,
+      "height": 1,
+      "launchDirection": "SE"
     }
   ],
   "totalTiles": 12,
@@ -155,27 +153,27 @@
   "knownSolution": [
     {
       "u": 2,
-      "v": 3
-    },
-    {
-      "u": 1,
       "v": 2
     },
     {
       "u": 1,
-      "v": 3
-    },
-    {
-      "u": 0,
-      "v": 3
+      "v": 1
     },
     {
       "u": 0,
       "v": 1
+    },
+    {
+      "u": 0,
+      "v": 3
+    },
+    {
+      "u": 2,
+      "v": 3
     },
     {
       "u": 3,
-      "v": 1
+      "v": 2
     },
     {
       "u": 1,
