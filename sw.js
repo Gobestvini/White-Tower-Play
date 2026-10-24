@@ -1,5 +1,5 @@
 const CACHE_PREFIX = `white-tower-${new URL(self.registration.scope).pathname}-`;
-const CACHE_NAME = `${CACHE_PREFIX}build-26b4a4a3f8569910`;
+const CACHE_NAME = `${CACHE_PREFIX}build-c73275e5b9de2ba1`;
 const gameUrl = path => new URL(path.replace(/^\//, ''), self.registration.scope).href;
 // Registration scope can cover several projects; only these entry URLs are ours.
 const isGameDocument = value => {
